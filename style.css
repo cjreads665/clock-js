@@ -1,0 +1,49 @@
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./bg.jpg);
+    background-size: 300%;
+}
+#clock{
+    width: 65vw;
+    height: 37vh;
+    background-color: grey;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;
+}
+.hand{
+    transform-origin: right;
+    width: 5rem;
+    background-color: black;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    right: 50%;   
+}
+.hrs{
+    width: 4rem;
+    background-color: rgb(227, 252, 0);
+}
+.min{
+    width: 6rem;
+
+}
+.sec{
+    background-color: tomato;
+    width: 7rem;
+}
+@media (min-width:1025px) { 
+    #clock{
+        width: 25rem;
+        height: 45vh;
+    }
+}
